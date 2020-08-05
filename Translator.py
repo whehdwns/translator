@@ -58,8 +58,8 @@ def translate_voice():
 
 	#Using Speech to Text-tz From IBM Cloud
 	#https://cloud.ibm.com/apidocs/speech-to-text/speech-to-text?code=python
-	url_s2t = "https://stream.watsonplatform.net/speech-to-text/api" #URL
-	iam_apikey_s2t = "4xeJNw5HFwQs9L3zIT2Mg7NTouCMooWzlIZz2VftSZ4m" #API Key
+	url_s2t = #URL
+	iam_apikey_s2t = #API Key
 	authenticator = IAMAuthenticator(iam_apikey_s2t)
 	s2t = SpeechToTextV1(authenticator=authenticator)
 	s2t.set_service_url(url_s2t)
@@ -83,8 +83,8 @@ def translate_text(inputs_lang, outputs):
 		return
 	else:
 	
-		url_lt='https://gateway.watsonplatform.net/language-translator/api'
-		apikey_lt='ENOm199q7oInUT_ZJ0JOPFigyAI62uZb0BC_nFYycvqn'
+		url_lt=#URL
+		apikey_lt=#API KEY
 		version_lt='2018-05-01'
 		authenticator = IAMAuthenticator(apikey_lt)
 		language_translator = LanguageTranslatorV3(version=version_lt,authenticator=authenticator)
